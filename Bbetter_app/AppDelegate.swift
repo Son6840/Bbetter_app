@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        //스플래쉬 화면 뜨는 시간 설정
+        Thread.sleep(forTimeInterval: 2.0)
         return true
     }
 
