@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //스플래쉬 화면 뜨는 시간 설정
-        Thread.sleep(forTimeInterval: 2.0)
+        Thread.sleep(forTimeInterval: 1.0)
         return true
     }
 
