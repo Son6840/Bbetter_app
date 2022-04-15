@@ -14,7 +14,7 @@
 		2839D43E27FD5ED60006838F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2839D43D27FD5ED60006838F /* Assets.xcassets */; };
 		2839D44127FD5ED60006838F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2839D43F27FD5ED60006838F /* LaunchScreen.storyboard */; };
 		79B0917E2802BD0400FE2412 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0917C2802BD0400FE2412 /* TabBarController.swift */; };
-		79B0917F2802BD0400FE2412 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B0917D2802BD0400FE2412 /* TabBarController.xib */; };
+		79BCF6852806B13200E93136 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BCF6842806B13200E93136 /* DateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		2839D44027FD5ED60006838F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2839D44227FD5ED60006838F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B0917C2802BD0400FE2412 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		79B0917D2802BD0400FE2412 /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		79BCF6842806B13200E93136 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				2839D43627FD5ED50006838F /* SceneDelegate.swift */,
 				2839D43827FD5ED50006838F /* ViewController.swift */,
 				79B0917C2802BD0400FE2412 /* TabBarController.swift */,
-				79B0917D2802BD0400FE2412 /* TabBarController.xib */,
+				79BCF6842806B13200E93136 /* DateViewController.swift */,
 				2839D43A27FD5ED50006838F /* Main.storyboard */,
 				2839D43D27FD5ED60006838F /* Assets.xcassets */,
 				2839D43F27FD5ED60006838F /* LaunchScreen.storyboard */,
@@ -132,7 +132,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2839D44127FD5ED60006838F /* LaunchScreen.storyboard in Resources */,
-				79B0917F2802BD0400FE2412 /* TabBarController.xib in Resources */,
 				2839D43E27FD5ED60006838F /* Assets.xcassets in Resources */,
 				2839D43C27FD5ED50006838F /* Main.storyboard in Resources */,
 			);
@@ -145,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79BCF6852806B13200E93136 /* DateViewController.swift in Sources */,
 				2839D43927FD5ED50006838F /* ViewController.swift in Sources */,
 				79B0917E2802BD0400FE2412 /* TabBarController.swift in Sources */,
 				2839D43527FD5ED50006838F /* AppDelegate.swift in Sources */,
