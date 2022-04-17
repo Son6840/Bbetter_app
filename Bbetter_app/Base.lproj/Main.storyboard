@@ -42,12 +42,12 @@
         <!--번역기-->
         <scene sceneID="5Ct-Vv-dDH">
             <objects>
-                <viewController title="번역기" id="6BI-p2-KjN" sceneMemberID="viewController">
+                <viewController title="번역기" id="6BI-p2-KjN" customClass="TranslateViewController" customModule="Bbetter_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sWb-l1-HzK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J40-Zr-fYe">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J40-Zr-fYe">
                                 <rect key="frame" x="40" y="87" width="334" height="45"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.left.arrow.right" catalog="system" title="">
@@ -62,14 +62,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zis-nC-6io">
-                                <rect key="frame" x="30" y="99" width="146" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNk-O8-hzG">
-                                <rect key="frame" x="253" y="94" width="133" height="31"/>
+                                <rect key="frame" x="302" y="94" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             </button>
@@ -77,7 +71,6 @@
                                 <rect key="frame" x="20" y="482" width="374" height="150"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="9bm-wt-gF4"/>
                                     <constraint firstAttribute="height" constant="150" id="C5t-Ua-b8r"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -95,36 +88,44 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocl-qv-vDm">
+                                <rect key="frame" x="45" y="98" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Evb-T0-v7t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Evb-T0-v7t" firstAttribute="trailing" secondItem="Zis-nC-6io" secondAttribute="trailing" constant="238" id="2xm-9N-FGE"/>
+                            <constraint firstItem="ocl-qv-vDm" firstAttribute="baseline" secondItem="J40-Zr-fYe" secondAttribute="baseline" id="CbD-M3-vhp"/>
                             <constraint firstItem="Evb-T0-v7t" firstAttribute="bottom" secondItem="dMn-pd-MaB" secondAttribute="bottom" constant="181" id="D4k-8o-ida"/>
                             <constraint firstItem="aaH-w8-ZEc" firstAttribute="leading" secondItem="Evb-T0-v7t" secondAttribute="leading" constant="30" id="GJa-ro-lKC"/>
                             <constraint firstItem="J40-Zr-fYe" firstAttribute="centerX" secondItem="sWb-l1-HzK" secondAttribute="centerX" id="Itq-SG-I4n"/>
                             <constraint firstItem="sNk-O8-hzG" firstAttribute="centerY" secondItem="J40-Zr-fYe" secondAttribute="centerY" id="Lkh-P7-53q"/>
                             <constraint firstItem="J40-Zr-fYe" firstAttribute="leading" secondItem="aaH-w8-ZEc" secondAttribute="trailing" constant="10" id="MKx-Eq-dmj"/>
-                            <constraint firstItem="Zis-nC-6io" firstAttribute="top" secondItem="Evb-T0-v7t" secondAttribute="top" constant="55" id="NJh-cW-fNn"/>
+                            <constraint firstItem="ocl-qv-vDm" firstAttribute="leading" secondItem="Evb-T0-v7t" secondAttribute="leading" constant="45" id="N5o-Bn-7vx"/>
                             <constraint firstItem="J40-Zr-fYe" firstAttribute="leading" secondItem="aaH-w8-ZEc" secondAttribute="trailing" constant="10" id="WqY-DF-x4u"/>
                             <constraint firstItem="Evb-T0-v7t" firstAttribute="trailing" secondItem="dMn-pd-MaB" secondAttribute="trailing" constant="20" id="Xc9-9I-UZm"/>
                             <constraint firstItem="J40-Zr-fYe" firstAttribute="leading" secondItem="aaH-w8-ZEc" secondAttribute="trailing" constant="10" id="Xhh-Ib-bMd"/>
                             <constraint firstItem="aaH-w8-ZEc" firstAttribute="top" secondItem="Evb-T0-v7t" secondAttribute="top" constant="50" id="a7w-Yl-Hg1"/>
                             <constraint firstItem="aaH-w8-ZEc" firstAttribute="top" secondItem="Evb-T0-v7t" secondAttribute="top" constant="50" id="bHa-SA-1Sm"/>
-                            <constraint firstItem="sNk-O8-hzG" firstAttribute="centerY" secondItem="Zis-nC-6io" secondAttribute="centerY" id="cTl-It-7Ux"/>
-                            <constraint firstItem="sNk-O8-hzG" firstAttribute="leading" secondItem="Zis-nC-6io" secondAttribute="trailing" constant="77" id="glH-SE-a9p"/>
-                            <constraint firstItem="Zis-nC-6io" firstAttribute="leading" secondItem="Evb-T0-v7t" secondAttribute="leading" constant="30" id="iW3-bw-aVb"/>
                             <constraint firstItem="aaH-w8-ZEc" firstAttribute="leading" secondItem="Evb-T0-v7t" secondAttribute="leading" constant="30" id="ksx-gj-Kcy"/>
+                            <constraint firstItem="Evb-T0-v7t" firstAttribute="trailing" secondItem="sNk-O8-hzG" secondAttribute="trailing" constant="45" id="mq4-cy-Sb2"/>
+                            <constraint firstItem="sNk-O8-hzG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ocl-qv-vDm" secondAttribute="trailing" constant="8" symbolic="YES" id="o1j-IN-TKu"/>
                             <constraint firstItem="8Nd-0x-SvX" firstAttribute="leading" secondItem="Evb-T0-v7t" secondAttribute="leading" constant="20" id="qh5-72-OsU"/>
-                            <constraint firstItem="Evb-T0-v7t" firstAttribute="trailing" secondItem="sNk-O8-hzG" secondAttribute="trailing" constant="28" id="qng-L9-2wn"/>
                             <constraint firstItem="dMn-pd-MaB" firstAttribute="leading" secondItem="Evb-T0-v7t" secondAttribute="leading" constant="20" id="rMk-Sq-3Wf"/>
                             <constraint firstItem="Evb-T0-v7t" firstAttribute="bottom" secondItem="J40-Zr-fYe" secondAttribute="bottom" constant="681" id="vU9-00-gEJ"/>
+                            <constraint firstItem="sNk-O8-hzG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Evb-T0-v7t" secondAttribute="leading" symbolic="YES" id="xHD-AT-Lvk"/>
                             <constraint firstItem="Evb-T0-v7t" firstAttribute="trailing" secondItem="8Nd-0x-SvX" secondAttribute="trailing" constant="20" id="xdr-rN-j3i"/>
                             <constraint firstItem="8Nd-0x-SvX" firstAttribute="top" secondItem="J40-Zr-fYe" secondAttribute="bottom" constant="100" id="yGp-Qx-Vaa"/>
                             <constraint firstItem="sNk-O8-hzG" firstAttribute="top" secondItem="aaH-w8-ZEc" secondAttribute="top" id="zXg-9m-flE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Translate" image="book.closed.fill" catalog="system" selectedImage="book.closed.fill" id="zG4-Lb-ZNi"/>
+                    <connections>
+                        <outlet property="searchText" destination="ocl-qv-vDm" id="Ild-ZQ-qdz"/>
+                        <outlet property="texLabel" destination="dMn-pd-MaB" id="vQ2-pC-pQl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCr-ga-aVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
