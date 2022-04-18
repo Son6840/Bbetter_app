@@ -123,8 +123,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Translate" image="book.closed.fill" catalog="system" selectedImage="book.closed.fill" id="zG4-Lb-ZNi"/>
                     <connections>
-                        <outlet property="searchText" destination="ocl-qv-vDm" id="Ild-ZQ-qdz"/>
-                        <outlet property="texLabel" destination="dMn-pd-MaB" id="vQ2-pC-pQl"/>
+                        <outlet property="searchText" destination="8Nd-0x-SvX" id="QYz-Ou-2yc"/>
+                        <outlet property="textLabel" destination="dMn-pd-MaB" id="iix-TA-gqR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCr-ga-aVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

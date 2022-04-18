@@ -7,18 +7,26 @@
 
 import UIKit
 
-class TranslateViewController: UIViewController {
-    @IBOutlet weak var searchText: UIButton!
-    @IBOutlet weak var texLabel: UILabel!
+class TranslateViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+    @IBOutlet var searchText: UITextView!
+    @IBOutlet weak var textLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        callURL()
-
+        self.searchText.delegate = self
+        self.searchText.refreshControl?.addTarget(self, action: #selector(textViewDidChange(_:)), for: .editingChanged)
+        self.textLabel.numberOfLines = 0
+       
+        
+        
         // Do any additional setup after loading the view.
     }
     
+    
+    @objc func textViewDidChange(_ textView: UITextView) {
+        callURL()
+    }
     func callURL(){
-        let text = searchText.titleLabel!
+        let text = searchText.text!
         let param = "source=ko&target=en&text=\(text)"
         let paramData = param.data(using: .utf8)
         let Naver_URL = URL(string: "https://openapi.naver.com/v1/papago/n2mt")
@@ -44,7 +52,7 @@ class TranslateViewController: UIViewController {
                 print(str)
                 
                 DispatchQueue.main.async {
-                    self.texLabel.text = str
+                    self.textLabel.text = str
                 }
                 
             }
@@ -55,6 +63,7 @@ class TranslateViewController: UIViewController {
         }
         
         task.resume()
+        
         
         
         
