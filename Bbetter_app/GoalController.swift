@@ -16,7 +16,7 @@ class GoalController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let english: [String] = ["a", "b", "c"]
     
     func numberOfSections(in tableView: UITableView) -> Int {
-    
+        // 두개리턴
         return 2
     }
     
