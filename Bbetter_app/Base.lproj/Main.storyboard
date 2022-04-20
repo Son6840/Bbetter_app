@@ -34,6 +34,15 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TSi-ZE-40I">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1Y7-v2-znT">
+                                    <rect key="frame" x="0.0" y="110.5" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="추가"/>
+                                    <connections>
+                                        <segue destination="gQS-93-UWI" kind="show" id="io4-da-BS3"/>
+                                    </connections>
+                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="loE-ly-NAf" style="IBUITableViewCellStyleDefault" id="bF1-0C-mk4">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -76,6 +85,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMN-Dt-M3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="578" y="575"/>
+        </scene>
+        <!--목표 추가 Scene-->
+        <scene sceneID="rdT-Lr-r8T">
+            <objects>
+                <viewController title="목표 추가 Scene" id="gQS-93-UWI" customClass="AddGoalController" customModule="Bbetter_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DpD-On-l3c" customClass="ADBannerView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="설정목표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deg-6D-Sjj">
+                                <rect key="frame" x="34" y="57" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bXc-X5-2Fe" customClass="Add">
+                                <rect key="frame" x="120" y="50" width="175" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="vza-Yh-jLg">
+                                <rect key="frame" x="120" y="106" width="205" height="34.5"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시작일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQP-zG-GzT">
+                                <rect key="frame" x="34" y="120" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종료일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOL-74-d8H">
+                                <rect key="frame" x="34" y="191" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S8-cc-S7D">
+                                <rect key="frame" x="174" y="301" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="저장"/>
+                            </button>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="SEu-3s-wro">
+                                <rect key="frame" x="120" y="186" width="217" height="31"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jfi-j9-4zt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jfi-j9-4zt" firstAttribute="trailing" secondItem="bXc-X5-2Fe" secondAttribute="trailing" constant="127" id="5nS-8d-ZSh"/>
+                            <constraint firstItem="jfi-j9-4zt" firstAttribute="trailing" secondItem="vza-Yh-jLg" secondAttribute="trailing" constant="97" id="6Me-Hz-dJn"/>
+                            <constraint firstItem="SEu-3s-wro" firstAttribute="top" secondItem="vza-Yh-jLg" secondAttribute="bottom" constant="30" id="7gZ-ZB-wfJ"/>
+                            <constraint firstItem="jfi-j9-4zt" firstAttribute="bottom" secondItem="ZOL-74-d8H" secondAttribute="bottom" constant="630" id="DO4-ow-eMu"/>
+                            <constraint firstItem="vza-Yh-jLg" firstAttribute="top" secondItem="bXc-X5-2Fe" secondAttribute="bottom" constant="38" id="HPY-Y0-kCQ"/>
+                            <constraint firstItem="vza-Yh-jLg" firstAttribute="leading" secondItem="qQP-zG-GzT" secondAttribute="trailing" constant="33" id="NlJ-Uq-9w6"/>
+                            <constraint firstItem="Deg-6D-Sjj" firstAttribute="leading" secondItem="jfi-j9-4zt" secondAttribute="leading" constant="20" id="O0N-jz-kmH"/>
+                            <constraint firstItem="8S8-cc-S7D" firstAttribute="leading" secondItem="jfi-j9-4zt" secondAttribute="leading" constant="174" id="PGf-To-yLA"/>
+                            <constraint firstItem="bXc-X5-2Fe" firstAttribute="leading" secondItem="Deg-6D-Sjj" secondAttribute="trailing" constant="33" id="TCr-so-aPV"/>
+                            <constraint firstItem="vza-Yh-jLg" firstAttribute="top" secondItem="bXc-X5-2Fe" secondAttribute="bottom" constant="38" id="YT2-Xw-z8p"/>
+                            <constraint firstItem="ZOL-74-d8H" firstAttribute="leading" secondItem="jfi-j9-4zt" secondAttribute="leading" constant="34" id="ZAn-Jd-aLa"/>
+                            <constraint firstItem="bXc-X5-2Fe" firstAttribute="leading" secondItem="Deg-6D-Sjj" secondAttribute="trailing" constant="33" id="axZ-fV-XDh"/>
+                            <constraint firstItem="bXc-X5-2Fe" firstAttribute="top" secondItem="DpD-On-l3c" secondAttribute="topMargin" constant="37" id="b8p-z7-P9x"/>
+                            <constraint firstItem="SEu-3s-wro" firstAttribute="leading" secondItem="ZOL-74-d8H" secondAttribute="trailing" constant="41" id="cTS-Do-XtA"/>
+                            <constraint firstItem="jfi-j9-4zt" firstAttribute="bottom" secondItem="8S8-cc-S7D" secondAttribute="bottom" constant="505" id="eQq-G8-XlF"/>
+                            <constraint firstItem="vza-Yh-jLg" firstAttribute="leading" secondItem="qQP-zG-GzT" secondAttribute="trailing" constant="33" id="fkX-aJ-xei"/>
+                            <constraint firstItem="qQP-zG-GzT" firstAttribute="top" secondItem="Deg-6D-Sjj" secondAttribute="bottom" constant="55" id="gKR-yR-Gxr"/>
+                            <constraint firstItem="Deg-6D-Sjj" firstAttribute="top" secondItem="jfi-j9-4zt" secondAttribute="top" id="lbN-AV-gbP"/>
+                            <constraint firstItem="8S8-cc-S7D" firstAttribute="top" secondItem="SEu-3s-wro" secondAttribute="bottom" constant="94" id="oBB-Ij-BzK"/>
+                            <constraint firstItem="qQP-zG-GzT" firstAttribute="leading" secondItem="jfi-j9-4zt" secondAttribute="leading" constant="34" id="poK-OH-oyF"/>
+                            <constraint firstItem="qQP-zG-GzT" firstAttribute="top" secondItem="Deg-6D-Sjj" secondAttribute="bottom" constant="55" id="pq1-4b-74z"/>
+                            <constraint firstItem="jfi-j9-4zt" firstAttribute="trailing" secondItem="8S8-cc-S7D" secondAttribute="trailing" constant="173" id="qNY-Rl-YF1"/>
+                            <constraint firstItem="ZOL-74-d8H" firstAttribute="top" secondItem="qQP-zG-GzT" secondAttribute="bottom" constant="50" id="qgJ-5S-mHf"/>
+                            <constraint firstItem="ZOL-74-d8H" firstAttribute="top" secondItem="qQP-zG-GzT" secondAttribute="bottom" constant="50" id="xCZ-fU-43l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mCD-tc-CkE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9O-lH-Dvp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357.9710144927537" y="786.83035714285711"/>
         </scene>
         <!--번역기-->
         <scene sceneID="5Ct-Vv-dDH">

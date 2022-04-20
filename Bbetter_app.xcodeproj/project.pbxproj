@@ -14,6 +14,7 @@
 		2839D43E27FD5ED60006838F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2839D43D27FD5ED60006838F /* Assets.xcassets */; };
 		2839D44127FD5ED60006838F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2839D43F27FD5ED60006838F /* LaunchScreen.storyboard */; };
 		283C777C28069F1400DC4563 /* GoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C777B28069F1400DC4563 /* GoalController.swift */; };
+		283C7784280FFC1600DC4563 /* AddGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C7783280FFC1600DC4563 /* AddGoalController.swift */; };
 		79B0917E2802BD0400FE2412 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0917C2802BD0400FE2412 /* TabBarController.swift */; };
 		79B0917F2802BD0400FE2412 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B0917D2802BD0400FE2412 /* TabBarController.xib */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		2839D44027FD5ED60006838F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2839D44227FD5ED60006838F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283C777B28069F1400DC4563 /* GoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalController.swift; sourceTree = "<group>"; };
+		283C7783280FFC1600DC4563 /* AddGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalController.swift; sourceTree = "<group>"; };
 		79B0917C2802BD0400FE2412 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		79B0917D2802BD0400FE2412 /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				2839D43F27FD5ED60006838F /* LaunchScreen.storyboard */,
 				2839D44227FD5ED60006838F /* Info.plist */,
 				283C777B28069F1400DC4563 /* GoalController.swift */,
+				283C7783280FFC1600DC4563 /* AddGoalController.swift */,
 			);
 			path = Bbetter_app;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				283C777C28069F1400DC4563 /* GoalController.swift in Sources */,
 				2839D43927FD5ED50006838F /* ViewController.swift in Sources */,
+				283C7784280FFC1600DC4563 /* AddGoalController.swift in Sources */,
 				79B0917E2802BD0400FE2412 /* TabBarController.swift in Sources */,
 				2839D43527FD5ED50006838F /* AppDelegate.swift in Sources */,
 				2839D43727FD5ED50006838F /* SceneDelegate.swift in Sources */,
