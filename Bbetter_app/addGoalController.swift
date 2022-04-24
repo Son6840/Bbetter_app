@@ -8,7 +8,10 @@
 import UIKit
 
 class AddGoalController: UIViewController {
+    
+    @IBOutlet weak var Gname: UITextField!
 
+    var data: [String] = ["data1"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,5 +19,10 @@ class AddGoalController: UIViewController {
     }
     
 
+    @IBAction func saveGoal(_sender: Any){
+        data.append(Gname.text!)
+        print(data)
+        
+    }
     
 }
