@@ -34,6 +34,15 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TSi-ZE-40I">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1Y7-v2-znT">
+                                    <rect key="frame" x="0.0" y="110.5" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="추가"/>
+                                    <connections>
+                                        <segue destination="gQS-93-UWI" kind="show" id="mpX-ga-7pQ"/>
+                                    </connections>
+                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="loE-ly-NAf" style="IBUITableViewCellStyleDefault" id="bF1-0C-mk4">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -76,6 +85,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMN-Dt-M3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="578" y="575"/>
+        </scene>
+        <!--목표 추가 Scene-->
+        <scene sceneID="rdT-Lr-r8T">
+            <objects>
+                <viewController title="목표 추가 Scene" id="gQS-93-UWI" customClass="AddGoalController" customModule="Bbetter_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DpD-On-l3c" customClass="ADBannerView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="설정목표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Deg-6D-Sjj">
+                                <rect key="frame" x="43" y="148" width="59" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="5LT-uy-nsh"/>
+                                    <constraint firstAttribute="height" constant="21" id="6J5-Mh-mcx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="59" id="RVC-Er-USc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="jvV-dK-PRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8S8-cc-S7D">
+                                <rect key="frame" x="174" y="340" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="저장"/>
+                                <connections>
+                                    <action selector="saveGoalWith_sender:" destination="gQS-93-UWI" eventType="touchUpInside" id="w2E-RC-ekR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kCJ-JY-Afu">
+                                <rect key="frame" x="159" y="141" width="149" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jfi-j9-4zt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jfi-j9-4zt" firstAttribute="trailing" secondItem="Deg-6D-Sjj" secondAttribute="trailing" constant="312" id="AYY-Ms-JpJ"/>
+                            <constraint firstItem="jfi-j9-4zt" firstAttribute="bottom" secondItem="Deg-6D-Sjj" secondAttribute="bottom" constant="673" id="K27-a2-wTv"/>
+                            <constraint firstItem="Deg-6D-Sjj" firstAttribute="top" secondItem="jfi-j9-4zt" secondAttribute="top" constant="104" id="Rac-OQ-BSx"/>
+                            <constraint firstItem="Deg-6D-Sjj" firstAttribute="leading" secondItem="jfi-j9-4zt" secondAttribute="leading" constant="43" id="nQi-hw-q9T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mCD-tc-CkE"/>
+                    <connections>
+                        <outlet property="Gname" destination="kCJ-JY-Afu" id="vxn-8x-hc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9O-lH-Dvp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357.9710144927537" y="786.83035714285711"/>
         </scene>
         <!--번역기-->
         <scene sceneID="5Ct-Vv-dDH">
