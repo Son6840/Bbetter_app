@@ -20,6 +20,10 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
 
         textField.becomeFirstResponder()
         textField.delegate = self
+        
+        datePicker.setDate(Date(), animated: true)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "저장", style: .done, target: self, action: #selector(didTapSaveButton))
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -27,8 +31,23 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
-    @IBAction func didTapSaveButton() {
-        
+    @objc func didTapSaveButton() {
+        if let text = textField.text, !text.isEmpty {
+            let date = datePicker.date
+            
+            realm.beginWrite()
+            let newItem = ToDoListItem()
+            newItem.date = date
+            newItem.item = text
+            realm.add(newItem)
+            
+            try! realm.commitWrite()
+            
+            completionHandler?()
+            navigationController?.popToRootViewController(animated: true)
+        }else{
+            print("항목을 추가하세요")
+        }
     }
 
     

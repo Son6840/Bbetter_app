@@ -11,7 +11,6 @@ class ToDoListItem: Object {
     
     @objc dynamic var item: String = ""
     @objc dynamic var date: Date = Date()
-    
 
 }
 
@@ -19,9 +18,11 @@ class GoalController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet var table: UITableView!
     private var data = [ToDoListItem]()
+    private let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        data = realm.objects(ToDoListItem.self).map({ $0 })
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.table.delegate = self
         self.table.dataSource = self
@@ -51,9 +52,20 @@ class GoalController: UIViewController, UITableViewDelegate, UITableViewDataSour
         guard let vc = storyboard?.instantiateViewController(identifier: "enter") as? EntryViewController else {
             return
         }
+        vc.completionHandler = { [weak self] in
+            self?.refresh()
+            
+            
+        }
+        
         vc.title = "New Item"
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func refresh(){
+        data = realm.objects(ToDoListItem.self).map({ $0 })
+        table.reloadData()
     }
     
 }
