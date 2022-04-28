@@ -100,16 +100,48 @@
             </objects>
             <point key="canvasLocation" x="1936" y="765"/>
         </scene>
-        <!--View Controller-->
+        <!--View View Controller-->
         <scene sceneID="Zx1-EO-GdR">
             <objects>
-                <viewController id="pvX-cD-Pmb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="view" id="pvX-cD-Pmb" customClass="ViewViewController" customModule="Bbetter_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zFU-oB-jmo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RH-es-RHY">
+                                <rect key="frame" x="20" y="64" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="m02-uz-cYJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29p-fS-KKc">
+                                <rect key="frame" x="20" y="144" width="374" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="aBo-Mr-QS5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KXH-U8-ufB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3RH-es-RHY" firstAttribute="leading" secondItem="KXH-U8-ufB" secondAttribute="leading" constant="20" id="1pr-gw-tv7"/>
+                            <constraint firstItem="3RH-es-RHY" firstAttribute="top" secondItem="KXH-U8-ufB" secondAttribute="top" constant="20" id="89i-mi-x4S"/>
+                            <constraint firstItem="29p-fS-KKc" firstAttribute="top" secondItem="3RH-es-RHY" secondAttribute="bottom" constant="10" id="Qvd-Ze-sf1"/>
+                            <constraint firstItem="29p-fS-KKc" firstAttribute="leading" secondItem="KXH-U8-ufB" secondAttribute="leading" constant="20" id="Sfy-h0-T6r"/>
+                            <constraint firstItem="KXH-U8-ufB" firstAttribute="trailing" secondItem="3RH-es-RHY" secondAttribute="trailing" constant="20" id="g9z-gw-3Mg"/>
+                            <constraint firstItem="KXH-U8-ufB" firstAttribute="trailing" secondItem="29p-fS-KKc" secondAttribute="trailing" constant="20" id="zCn-CT-d6A"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="29p-fS-KKc" id="ijl-v9-EHr"/>
+                        <outlet property="itemlabel" destination="3RH-es-RHY" id="CkQ-09-668"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmS-sj-cPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
