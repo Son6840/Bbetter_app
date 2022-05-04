@@ -115,11 +115,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Translate" image="book.closed.fill" catalog="system" selectedImage="book.closed.fill" id="zG4-Lb-ZNi"/>
                     <connections>
-<<<<<<< Updated upstream
                         <outlet property="searchText" destination="8Nd-0x-SvX" id="QYz-Ou-2yc"/>
-=======
-                        <outlet property="searchText" destination="8Nd-0x-SvX" id="Zrw-VM-6Gv"/>
->>>>>>> Stashed changes
+
                         <outlet property="textLabel" destination="dMn-pd-MaB" id="iix-TA-gqR"/>
                     </connections>
                 </viewController>

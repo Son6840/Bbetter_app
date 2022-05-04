@@ -12,11 +12,13 @@ class TranslateViewController: UIViewController, UITextFieldDelegate, UITextView
     @IBOutlet weak var textLabel: UILabel!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.searchText.delegate = self
         self.searchText.refreshControl?.addTarget(self, action: #selector(textViewDidChange(_:)), for: .editingChanged) //실시간입력 되었을때 번역함수 호출
         self.textLabel.numberOfLines = 0
+        
         
         
         // Do any additional setup after loading the view.
@@ -38,6 +40,9 @@ class TranslateViewController: UIViewController, UITextFieldDelegate, UITextView
     @objc func textViewDidChange(_ textView: UITextView) {
         callURL()
     }
+    
+    
+    
     func callURL(){
         let text = searchText.text!
         let param = "source=ko&target=en&text=\(text)"
@@ -61,32 +66,27 @@ class TranslateViewController: UIViewController, UITextFieldDelegate, UITextView
         
         //Task
         let task = session.dataTask(with: request) { (data, response, error) in
-            //통신 성공
             
-               
+            
+            if error == nil && data != nil {
+                let decoder = JSONDecoder()
+                do{
+                    let decodedData = try decoder.decode(Papago.self, from: data!)
                     
-                    if error == nil && data != nil {
-                        let decoder = JSONDecoder()
-                        do{
-                            let decodedData = try decoder.decode(Papago.self, from: data!)
-                            
-                            print(decodedData)
-                            DispatchQueue.main.async {
-                                self.textLabel.text = decodedData.message.result.translatedText
-                                
-                            }
-                        }catch{
-                            print("error")
-                        }
+                    print(decodedData)
+                    DispatchQueue.main.async {
+                        self.textLabel.text = decodedData.message.result.translatedText
+                        
                     }
-                    //통신 실패
-                    if let error = error {
-                        print(error.localizedDescription)
-                    }
+                }catch{
+                    print("error")
                 }
-                task.resume()
-                
+            }
+            //통신 실패
+            if let error = error {
+                print(error.localizedDescription)
             }
         }
-        
-
+        task.resume()
+    }
+}
