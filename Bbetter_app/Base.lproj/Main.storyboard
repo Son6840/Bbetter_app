@@ -97,20 +97,7 @@
                         <viewLayoutGuide key="safeArea" id="Evb-T0-v7t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="J40-Zr-fYe" firstAttribute="leading" secondItem="ocl-qv-vDm" secondAttribute="trailing" constant="64" id="3h1-zt-Rri"/>
-                            <constraint firstItem="8Nd-0x-SvX" firstAttribute="top" secondItem="sWb-l1-HzK" secondAttribute="top" constant="232" id="5pn-lp-X8x"/>
-                            <constraint firstItem="J40-Zr-fYe" firstAttribute="top" secondItem="Evb-T0-v7t" secondAttribute="top" constant="43" id="82M-DB-5xy"/>
-                            <constraint firstItem="aaH-w8-ZEc" firstAttribute="leading" secondItem="sWb-l1-HzK" secondAttribute="leadingMargin" constant="10" id="BTu-0t-ac4"/>
-                            <constraint firstItem="8Nd-0x-SvX" firstAttribute="trailing" secondItem="dMn-pd-MaB" secondAttribute="trailing" id="KUj-aA-AtF"/>
-                            <constraint firstItem="8Nd-0x-SvX" firstAttribute="centerX" secondItem="J40-Zr-fYe" secondAttribute="centerX" id="N83-fQ-4xc"/>
-                            <constraint firstItem="J40-Zr-fYe" firstAttribute="centerY" secondItem="sNk-O8-hzG" secondAttribute="centerY" id="bKH-mD-7jB"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aaH-w8-ZEc" secondAttribute="trailing" constant="20" symbolic="YES" id="gLa-ws-BgT"/>
-                            <constraint firstItem="J40-Zr-fYe" firstAttribute="baseline" secondItem="ocl-qv-vDm" secondAttribute="baseline" id="iVS-pX-9j2"/>
-                            <constraint firstItem="8Nd-0x-SvX" firstAttribute="leading" secondItem="dMn-pd-MaB" secondAttribute="leading" id="jqb-EW-aIZ"/>
-                            <constraint firstItem="sNk-O8-hzG" firstAttribute="leading" secondItem="J40-Zr-fYe" secondAttribute="trailing" constant="63.5" id="jy4-Lq-mkJ"/>
-                            <constraint firstItem="J40-Zr-fYe" firstAttribute="centerX" secondItem="sWb-l1-HzK" secondAttribute="centerX" id="k7Z-Bi-KCi"/>
-                            <constraint firstItem="Evb-T0-v7t" firstAttribute="bottom" secondItem="dMn-pd-MaB" secondAttribute="bottom" constant="181" id="ocU-fy-aFL"/>
-                            <constraint firstItem="aaH-w8-ZEc" firstAttribute="top" secondItem="sWb-l1-HzK" secondAttribute="topMargin" constant="50" id="sYR-OT-ykz"/>
+                        
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Translate" image="book.closed.fill" catalog="system" selectedImage="book.closed.fill" id="zG4-Lb-ZNi"/>
