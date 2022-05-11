@@ -17,6 +17,7 @@
 		283C7784280FFC1600DC4563 /* AddGoalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C7783280FFC1600DC4563 /* AddGoalController.swift */; };
 		283C7786281A6A8D00DC4563 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C7785281A6A8D00DC4563 /* EntryViewController.swift */; };
 		283C7788281A6AB400DC4563 /* ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C7787281A6AB400DC4563 /* ViewViewController.swift */; };
+		286B1D22282B972700308A66 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286B1D21282B972700308A66 /* News.storyboard */; };
 		79B0917E2802BD0400FE2412 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0917C2802BD0400FE2412 /* TabBarController.swift */; };
 		79B0917F2802BD0400FE2412 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B0917D2802BD0400FE2412 /* TabBarController.xib */; };
 		881B86C97DA97380330EC49B /* Pods_Bbetter_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40529ED3BC258954BFB8E110 /* Pods_Bbetter_app.framework */; };
@@ -35,6 +36,7 @@
 		283C7783280FFC1600DC4563 /* AddGoalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalController.swift; sourceTree = "<group>"; };
 		283C7785281A6A8D00DC4563 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		283C7787281A6AB400DC4563 /* ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewViewController.swift; sourceTree = "<group>"; };
+		286B1D21282B972700308A66 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = SOURCE_ROOT; };
 		39B0AF6EB5EDF1E5AF59CBDB /* Pods-Bbetter_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bbetter_app.debug.xcconfig"; path = "Target Support Files/Pods-Bbetter_app/Pods-Bbetter_app.debug.xcconfig"; sourceTree = "<group>"; };
 		40529ED3BC258954BFB8E110 /* Pods_Bbetter_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bbetter_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B0917C2802BD0400FE2412 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		2839D43327FD5ED50006838F /* Bbetter_app */ = {
 			isa = PBXGroup;
 			children = (
+				286B1D21282B972700308A66 /* News.storyboard */,
 				2839D43427FD5ED50006838F /* AppDelegate.swift */,
 				2839D43627FD5ED50006838F /* SceneDelegate.swift */,
 				2839D43827FD5ED50006838F /* ViewController.swift */,
@@ -169,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286B1D22282B972700308A66 /* News.storyboard in Resources */,
 				2839D44127FD5ED60006838F /* LaunchScreen.storyboard in Resources */,
 				79B0917F2802BD0400FE2412 /* TabBarController.xib in Resources */,
 				2839D43E27FD5ED60006838F /* Assets.xcassets in Resources */,

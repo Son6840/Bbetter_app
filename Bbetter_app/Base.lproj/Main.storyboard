@@ -163,22 +163,6 @@
             </objects>
             <point key="canvasLocation" x="3426.0869565217395" y="478.79464285714283"/>
         </scene>
-        <!--뉴스-->
-        <scene sceneID="C7O-Dc-FQQ">
-            <objects>
-                <viewController title="뉴스" id="dgv-K6-Ufr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FH1-V3-6I2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="w1D-iv-SWD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Daily News" image="newspaper" catalog="system" selectedImage="newspaper" id="RSl-bB-avi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KDU-CJ-pxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2315.9420289855075" y="-230.35714285714283"/>
-        </scene>
         <!--캘린더-->
         <scene sceneID="c0S-cG-LVJ">
             <objects>
@@ -208,6 +192,36 @@
             </objects>
             <point key="canvasLocation" x="1488.4057971014495" y="-118.52678571428571"/>
         </scene>
+        <!--news-->
+        <scene sceneID="7in-ed-Hpt">
+            <objects>
+                <viewController title="news" id="hJY-0F-8dQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="news" id="fJA-eD-pQs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wjE-JT-pe3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <connections>
+                                    <segue destination="OSQ-64-EgB" kind="embed" id="stZ-Uz-PL0"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mjb-U5-N4v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wjE-JT-pe3" firstAttribute="top" secondItem="mjb-U5-N4v" secondAttribute="top" id="JB9-A4-Zue"/>
+                            <constraint firstItem="mjb-U5-N4v" firstAttribute="bottom" secondItem="wjE-JT-pe3" secondAttribute="bottom" id="OTQ-ls-2hu"/>
+                            <constraint firstItem="mjb-U5-N4v" firstAttribute="trailing" secondItem="wjE-JT-pe3" secondAttribute="trailing" id="aPx-F3-XD8"/>
+                            <constraint firstItem="wjE-JT-pe3" firstAttribute="leading" secondItem="mjb-U5-N4v" secondAttribute="leading" id="t8A-jl-cip"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News" image="newspaper" catalog="system" selectedImage="newspaper" id="f82-qJ-aVg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqj-a0-cZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377" y="-119"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MiN-D4-psk">
             <objects>
@@ -221,8 +235,8 @@
                     <connections>
                         <segue destination="fvq-v3-moM" kind="relationship" relationship="viewControllers" id="Q4t-k0-tlM"/>
                         <segue destination="QZ1-VH-p3o" kind="relationship" relationship="viewControllers" id="e98-5e-qny"/>
-                        <segue destination="dgv-K6-Ufr" kind="relationship" relationship="viewControllers" id="kD6-gj-nPe"/>
                         <segue destination="6BI-p2-KjN" kind="relationship" relationship="viewControllers" id="O5J-bb-zrQ"/>
+                        <segue destination="hJY-0F-8dQ" kind="relationship" relationship="viewControllers" id="IbQ-JY-jhX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTK-yq-xJz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -271,6 +285,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZc-M5-M8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="576.81159420289862" y="574.55357142857144"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="Bn6-ua-byB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="News" id="OSQ-64-EgB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFf-XW-ztk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3188" y="-118"/>
         </scene>
     </scenes>
     <resources>
