@@ -98,7 +98,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7WJ-Mv-mF4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1936" y="765"/>
+            <point key="canvasLocation" x="2075" y="575"/>
+        </scene>
+        <!--translate-->
+        <scene sceneID="AD5-Lj-NmR">
+            <objects>
+                <viewController id="T0X-xj-kI6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H6N-bN-s8D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YV0-KM-8Z1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <connections>
+                                    <segue destination="19x-tO-a0n" kind="embed" id="Dye-fn-I3x"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="klP-bX-ilU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="klP-bX-ilU" firstAttribute="bottom" secondItem="YV0-KM-8Z1" secondAttribute="bottom" id="96n-Vd-kGE"/>
+                            <constraint firstItem="YV0-KM-8Z1" firstAttribute="top" secondItem="klP-bX-ilU" secondAttribute="top" id="UY5-68-eRR"/>
+                            <constraint firstItem="YV0-KM-8Z1" firstAttribute="leading" secondItem="klP-bX-ilU" secondAttribute="leading" id="YJh-wP-GpH"/>
+                            <constraint firstItem="klP-bX-ilU" firstAttribute="trailing" secondItem="YV0-KM-8Z1" secondAttribute="trailing" id="afa-xf-Ihc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="translate" image="book.closed.fill" catalog="system" selectedImage="book.closed.fill" id="NW0-yZ-5mm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6D5-Wz-DJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2805" y="876"/>
         </scene>
         <!--View View Controller-->
         <scene sceneID="Zx1-EO-GdR">
@@ -145,23 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmS-sj-cPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="1423"/>
-        </scene>
-        <!--번역기-->
-        <scene sceneID="5Ct-Vv-dDH">
-            <objects>
-                <viewController title="번역기" id="6BI-p2-KjN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sWb-l1-HzK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Evb-T0-v7t"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Translate" image="book.closed.fill" catalog="system" selectedImage="book.closed.fill" id="zG4-Lb-ZNi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aCr-ga-aVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3426.0869565217395" y="478.79464285714283"/>
+            <point key="canvasLocation" x="2074" y="1230"/>
         </scene>
         <!--뉴스-->
         <scene sceneID="C7O-Dc-FQQ">
@@ -177,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KDU-CJ-pxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2315.9420289855075" y="-230.35714285714283"/>
+            <point key="canvasLocation" x="2632" y="-148"/>
         </scene>
         <!--캘린더-->
         <scene sceneID="c0S-cG-LVJ">
@@ -222,7 +236,7 @@
                         <segue destination="fvq-v3-moM" kind="relationship" relationship="viewControllers" id="Q4t-k0-tlM"/>
                         <segue destination="QZ1-VH-p3o" kind="relationship" relationship="viewControllers" id="e98-5e-qny"/>
                         <segue destination="dgv-K6-Ufr" kind="relationship" relationship="viewControllers" id="kD6-gj-nPe"/>
-                        <segue destination="6BI-p2-KjN" kind="relationship" relationship="viewControllers" id="O5J-bb-zrQ"/>
+                        <segue destination="T0X-xj-kI6" kind="relationship" relationship="viewControllers" id="J6M-Y4-iz7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTK-yq-xJz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -271,6 +285,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZc-M5-M8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="576.81159420289862" y="574.55357142857144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UTh-LJ-9X6">
+            <objects>
+                <viewController id="OaG-1S-GuX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aTq-XE-f0x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="g2E-d6-xPX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MDy-QO-7yP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1251" y="-792"/>
+        </scene>
+        <!--Translate-->
+        <scene sceneID="Lpz-5h-N4A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Translate" id="19x-tO-a0n" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dc0-lA-Qw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3580" y="965"/>
         </scene>
     </scenes>
     <resources>
