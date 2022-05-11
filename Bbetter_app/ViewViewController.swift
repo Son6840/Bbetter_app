@@ -45,6 +45,7 @@ class ViewViewController: UIViewController {
         deletionHandler?()
         navigationController?.popToRootViewController(animated: true)
         
+        //yest
     }
 
     
